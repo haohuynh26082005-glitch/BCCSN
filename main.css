@@ -1,0 +1,137 @@
+/* --- Global Reset & Base Styles (Cải thiện Font và Nền) --- */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Font chữ hiện đại, dễ đọc hơn Arial */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #eef1f5; /* Tông nền nhẹ nhàng, tạo cảm giác sạch sẽ */
+    color: #333;
+}
+
+
+.container {
+    background-color: white;
+    padding: 30px;
+    border-radius: 12px; /* Góc bo tròn mềm mại hơn */
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1); /* Đổ bóng sâu hơn tạo hiệu ứng nổi */
+    width: 90%;
+    max-width: 1850px; /* Giới hạn chiều rộng tối đa */
+}
+
+h1 {
+    font-size: 2.2rem;
+    margin-bottom: 25px;
+    color: #2c3e50; /* Màu tiêu đề đậm, chuyên nghiệp */
+    border-bottom: 2px solid #eef1f5; /* Đường viền nhẹ dưới tiêu đề */
+    padding-bottom: 15px;
+}
+
+
+/* --- Matrix Inputs (Sử dụng CSS Grid cho độ chính xác cao) --- */
+.matrix-container {
+    display: flex;
+    justify-content: space-around;
+    gap: 20px; /* Khoảng cách giữa 2 khu vực ma trận */
+    margin-bottom: 30px;
+}
+
+/* **Lưu ý:** Bạn cần thêm một div bọc ngoài các inputs với class 'matrix-grid' trong HTML của mình */
+.matrix-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 145px); /* Ví dụ tạo 3 cột cố định 60px */
+    gap: 10px; /* Khoảng cách nhỏ giữa các ô input */
+    border: 1px solid #ccc;
+    padding: 50px;
+    border-radius: 8px;
+    background-color: #fafafa;
+}
+
+.matrix-grid input {
+    width: 100%;
+    height: 50px;
+    padding: 50px;
+    box-sizing: border-box; /* Đảm bảo padding không làm tăng chiều rộng ô */
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    text-align: center;
+    font-size: 2.5rem;
+    transition: border-color 0.3s;
+}
+
+.matrix-grid input:focus {
+    outline: none;
+    border-color: #3498db; /* Hiệu ứng focus đẹp hơn */
+}
+
+/* --- Buttons (Màu sắc và Hiệu ứng chuyển động) --- */
+.buttons {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap; /* Cho phép các nút xuống dòng trên màn hình nhỏ */
+}
+
+.buttons button {
+    margin: 8px;
+    padding: 30px 44px;
+    font-size: 1rem;
+    background-color: #3498db; /* Màu xanh dương chuyên nghiệp và dễ nhìn */
+    color: white;
+    border: none;
+    font-size: 25px;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease; /* Thêm hiệu ứng mượt mà */
+    box-shadow: 0 4px 10px rgba(52, 152, 219, 0.2);
+}
+
+.buttons button:hover {
+    background-color: #2980b9; /* Màu đậm hơn khi rê chuột */
+    transform: translateY(-2px); /* Nút bấm nhích lên nhẹ */
+}
+
+.buttons button:active {
+    transform: translateY(0); /* Nút bấm lún xuống khi nhấn */
+}
+
+/* --- Result (Khu vực kết quả nổi bật) --- */
+#result {
+    margin-top: 30px;
+    padding: 15px;
+    background-color: #ecf0f1;
+    border-radius: 8px;
+    font-size: 1.4rem;
+    font-weight: bold;
+    color: #2c3e50;
+    border-left: 5px solid #3498db; /* Tạo điểm nhấn màu sắc cho phần kết quả */
+    text-align: left;
+}
+
+
+.navbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;                 /* khoảng cách đều */
+    background-color: #3498db;
+    padding: 16px 30px;
+    border-radius: 10px;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 30px;           /* TO SẴN */
+    width: 15%;
+    padding: 20px  20px;
+    border-radius: 8px;
+    transition: all 0.25s ease;
+}
+
+.navbar a:hover {
+    background-color: #217dbb; /* hiệu ứng đẹp hơn underline */
+    transform: translateY(-2px);
+}
+
