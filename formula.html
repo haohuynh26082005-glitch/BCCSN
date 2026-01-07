@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chi Tiết Thuật Toán - Học Thuật Toán Sắp Xếp</title>
+    <link rel="stylesheet" href="ct.css">
+</head>
+<body>
+    <!-- Navigation Menu -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-content">
+                <div class="logo">
+                    <span class="logo-text">Công Thức Ma Trận</span>
+                </div>
+                <ul class="nav-menu">
+                    <li><a href="index.html">Trang Chủ</a></li>
+                    <li><a href="about.html">Giới Thiệu</a></li>
+                    <li><a href="formula.html" class="active">Thuật Toán</a></li>
+                    <a href="tracnghiem.html">Câu hỏi trắc nghiệm</a>
+                </ul>
+                <div id="userInfo" class="user-info"></div>
+                <button class="menu-toggle" id="menuToggle">☰</button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Chi Tiết Thuật Toán -->
+    <section class="algorithms-detail-section page-section">
+        <div class="container">
+            <h1 class="page-title">Các Thuật Toán Ma Trận</h1>
+            <p class="page-description">Tìm hiểu chi tiết về các thuật toán ma trận phổ biến, độ phức tạp và ứng dụng thực tế.</p>
+            
+            <div class="algorithms-grid">
+                <div class="algo-card">
+                    <div class="algo-card-header">
+                        <h3>Phép Cộng Ma trận</h3>
+                        <span class="complexity-badge">O(n²)</span>
+                    </div>
+                    <p><strong>Mô tả:</strong> Phép cộng ma trận là phép toán thực hiện cộng từng phần tử tương ứng của hai ma trận có cùng kích thước. Kết quả thu được là một ma trận mới có cùng số dòng và số cột với hai ma trận ban đầu. </p>
+                    <p><strong>Cách hoạt động:</strong> Duyệt lần lượt từng phần tử tương ứng của hai ma trận, cộng các phần tử cùng vị trí lại với nhau để tạo ra ma trận kết quả. </p>
+                    <ul class="algo-features">
+                        <b>Ưu Điểm</b>
+                        <li>✓ Dễ hiểu, dễ cài đặt</li>
+                        <li>✓ Độ chính xác cao</li>
+                        <li>✓ Phù hợp cho việc minh họa và giảng dạy</li>
+                        <b>Nhược Điểm</b>
+                        <li>✗ Chỉ áp dụng cho ma trận cùng kích thước</li>
+                        <li>✗ Không phù hợp với ma trận kích thước rất lớn</li>
+                    </ul>
+                    <p><strong>Ứng dụng:</strong> Phép cộng ma trận được sử dụng trong đại số tuyến tính, xử lý ảnh, đồ họa máy tính và các bài toán tính toán khoa học có dữ liệu dạng ma trận</p>
+                </div>
+
+                <div class="algo-card">
+                    <div class="algo-card-header">
+                        <h3>Phép Trừ Ma Trận</h3>
+                        <span class="complexity-badge">O(n²)</span>
+                    </div>
+                    <p><strong>Mô tả:</strong> Phép trừ ma trận là phép toán lấy từng phần tử của ma trận thứ nhất trừ đi phần tử tương ứng của ma trận thứ hai để tạo ra ma trận kết quả. </p>
+                    <p><strong>Cách hoạt động:</strong> Hai ma trận phải có cùng kích thước. Hệ thống duyệt từng vị trí tương ứng trong hai ma trận và thực hiện phép trừ để tính phần tử của ma trận kết quả. </p>
+                    <ul class="algo-features">
+                        <b>Ưu Điểm</b>
+                        <li>✓ Đơn giản, dễ hiểu</li>
+                        <li>✓ Thực hiện nhanh</li>
+                        <li>✓ Phù hợp cho học tập</li>
+                        <b>Nhược Điểm</b>
+                        <li>✗ Không áp dụng cho ma trận khác kích thước</li>
+                    </ul>
+                    <p><strong>Ứng dụng:</strong> Tốt khi chi phí hoán đổi cao, dữ liệu nhỏ.</p>
+                </div>
+
+                <div class="algo-card">
+                    <div class="algo-card-header">
+                        <h3>Phép Nhân Vô Hướng</h3>
+                        <span class="complexity-badge">O(n²)</span>
+                    </div>
+                    <p><strong>Mô tả:</strong> Phép nhân vô hướng là phép toán nhân một số với tất cả các phần tử của ma trận.</p>
+                    <p><strong>Cách hoạt động:</strong> Hệ thống lấy mỗi phần tử của ma trận nhân với một số vô hướng để tạo ra ma trận mới.</p>
+                    <ul class="algo-features">
+                        <b>Ưu Điểm</b>
+                        <li>✓ Dễ cài đặt</li>
+                        <li>✓ Tính toán nhanh</li>
+                        <li>✓ Không phụ thuộc kích thước ma trận</li>
+                    </ul>
+                    <p><strong>Ứng dụng:</strong> Dùng để thay đổi tỉ lệ giá trị trong các bài toán toán học và kỹ thuật.</p>
+                </div>
+
+                <div class="algo-card">
+                    <div class="algo-card-header">
+                        <h3>Phép Nhân Ma Trận</h3>
+                        <span class="complexity-badge success">O(n log n)</span>
+                    </div>
+                    <p><strong>Mô tả:</strong> Phép nhân ma trận là phép toán kết hợp các hàng của ma trận thứ nhất với các cột của ma trận thứ hai.</p>
+                    <p><strong>Cách hoạt động:</strong> Số cột của ma trận thứ nhất phải bằng số hàng của ma trận thứ hai. Hệ thống thực hiện nhân và cộng các phần tử tương ứng để tạo ma trận kết quả. </p>
+                    <ul class="algo-features">
+                        <b>Ưu Điểm</b>
+                        <li>✓ Ứng dụng rộng rãi</li>
+                        <li>✓ Quan trọng trong đại số tuyến tính</li>
+                        <b>Nhược Điểm</b>
+                        <li>✗ Tính toán phức tạp hơn</li>
+                        <li>✗ Phụ thuộc kích thước ma trận</li>
+                    </ul>
+                    <p><strong>Ứng dụng:</strong> Sắp xếp mảng lớn, thư viện chuẩn của nhiều ngôn ngữ.</p>
+                </div>
+
+                <div class="algo-card">
+                    <div class="algo-card-header">
+                        <h3>Phép Chuyển Vị Ma Trận</h3>
+                        <span class="complexity-badge success">O(n²)</span>
+                    </div>
+                    <p><strong>Mô tả:</strong> Phép chuyển vị là phép toán đổi vị trí các hàng thành cột của ma trận.</p>
+                    <p><strong>Cách hoạt động:</strong> Hệ thống hoán đổi vị trí phần tử tại hàng i, cột j thành hàng j, cột i.</p>
+                    <ul class="algo-features">
+                        <b>Ưu Điểm</b>
+                        <li>✓ Dễ hiểu</li>
+                        <li>✓ Không làm thay đổi giá trị phần tử</li>
+                        <li>✓ Hỗ trợ các phép toán khác</li>
+                    </ul>
+                    <p><strong>Ứng dụng:</strong> Dùng trong xử lý ma trận, đại số tuyến tính và tối ưu thuật toán.</p>
+                </div>
+            </div>
+
+            
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Thuật Toán Ma Trận</h3>
+                    <p>Nền tảng học thuật toán ma trận trực quan dành cho sinh viên</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Liên Kết</h3>
+                    <ul>
+                        <li><a href="about.html">Giới Thiệu</a></li>
+                        <li><a href="algorithms.html">Thuật Toán</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Liên Hệ</h3>
+                    <p>Email: huuhao737@gmail.com</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Website Học Thuật Toán Ma Trận</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="auth.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

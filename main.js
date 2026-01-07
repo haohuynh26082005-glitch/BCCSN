@@ -172,3 +172,8 @@ function showResult(title, A, B, result, detail) {
     document.getElementById("result").innerHTML = html;
 }
 
+
+
+fetch("getQuestion.php")
+  .then(res => res.json())
+  .then(data => console.log(data));
